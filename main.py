@@ -1,7 +1,7 @@
 import random
-from english_words import english_words_set
+from english_words import get_english_words_set
 
-words = [*english_words_set]
+words = [*get_english_words_set(['web2'], lower=True)]
 score = 0
 
 chosenWord = random.choice(words)
