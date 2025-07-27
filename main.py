@@ -15,6 +15,11 @@ while "".join(userWord) != chosenWord:
   userGuess = input("Guess a letter: ")
   userGuess = userGuess[0]
 
+  if userGuess == chosenWord:
+    score += wordLength
+    print("you win")
+    print("your score is: "+str(score))
+
   if userGuess in chosenWord:
     for i in range(wordLength):
       if userGuess == chosenWord[i]:
